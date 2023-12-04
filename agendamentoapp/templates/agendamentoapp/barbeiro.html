@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+
+{% block title %}Barbeiro{% endblock %}
+
+{% block nav %}
+    <a href="#secao1">SERVIÇOS</a>
+    <a href="#secao2">SOBRE</a> 
+    <a href="{% url 'logout' %}">SAIR</a>
+{% endblock %}
+
+{% block button1 %} <a href="{% url 'criar_agenda' %}"><button style="font-weight: bold; width:200px;" class="btn btn-warning mt-3">ABRIR AGENDA</button></a>{% endblock %}
+{% block button2 %} <a href="{% url 'criar_agenda' %}"><button style="font-weight: bold;" class="btn btn-warning mt-3">ABRIR AGENDA</button></a>{% endblock %}
+            

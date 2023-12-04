@@ -1,0 +1,193 @@
+/*CSS DO VIZUALIZAR O FEEDBACK*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+.btt{
+    background-color: rgb(242, 255, 55);
+    padding: 5px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 28, 44);
+}
+
+.review-container {
+    text-align: center;
+    width: 40%;
+    background: rgb(33, 32, 50);
+    color: #fff;
+    margin: 2rem;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, .2);
+    padding: 2.5rem;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    height: 200px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+h2 {
+    margin-bottom: 3rem;
+}
+
+.input-field {
+    background: rgb(38, 37, 55);
+    width: 100%;
+    border: 1px solid #6F6C7C;
+    padding: .85rem;
+    border-radius: 5px;
+}
+
+.input-field input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #8C8C9F;
+    width: calc(100% - 3.2rem);
+}
+
+.input-field i,
+.input-field input::placeholder {
+    color: #6F6C7C;
+}
+
+.suggest {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.suggest span {
+    background: #1F1E2F;
+    padding: .65rem 1.3rem;
+    border-radius: 5px;
+    font-size: .65rem;
+    color: #8C8C9F;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.suggest span:hover,
+.suggest span:active {
+    background: #8383ED;
+    color: #fff;
+}
+
+.cards {
+    margin-top: 2.5rem;
+}
+
+.cards .card {
+    width: 100%;
+    text-align: center;
+    margin-bottom: .7rem;
+    background: rgb(45, 43, 64);
+    border-radius: 5px;
+}
+
+.card>* {
+    padding: 1rem 1.2rem;
+}
+
+.card-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    background: purple;
+    border-radius: 50%;
+    outline: none;
+}
+
+.name .one {
+    background: orange;
+}
+
+.name,
+.name .img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.name .img {
+    justify-content: center;
+}
+
+.rate i {
+    color: yellow;
+}
+
+.card-content {
+    margin: 0;
+    padding-top: 0;
+}
+
+.card-content p {
+    font-size: .8rem;
+    color: rgb(152, 152, 165);
+}
+
+.card-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-action span {
+    font-size: .8rem;
+    color: RGB(101, 101, 114);
+}
+
+.card-action .btn {
+    padding: .3rem .7rem;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 2px;
+    color: #8C8C9F;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.error{
+    background-color: rgb(155, 37, 37);
+    color: white; 
+}
+.success{
+    background-color: rgb(80, 37, 106);
+    border-radius: 6px;
+    color: rgb(255, 255, 255); 
+}

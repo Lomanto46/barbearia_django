@@ -1,0 +1,37 @@
+{% extends "contasapp/base.html" %}
+{% load static %}
+
+{% block formulario %}
+
+    <form class="cadastro" method="post">{% csrf_token %}
+        <div class="cabecalho">
+            <h2>Cadastre-se</h2>
+        </div>
+        <hr style="color: white;">
+
+        <input class="form-control" type="text" name="nome" placeholder="Nome Completo">
+
+        <div class="email-usu">
+            <input class="usuario form-control" type="text" name="usuario" placeholder="Usuário de Acesso">
+            <input class="email form-control" type="email" name="email" placeholder="Email">
+        </div>
+
+        <div class="tel-data">
+            <input class="telefone form-control" type="text" name="fone" placeholder="Telefone">
+            <input class="data form-control" placeholder="Data" type="date" name="data">
+        </div>
+
+        <div class="senhas">
+            <input class=" senha form-control" type="password" name="senha" placeholder="Senha">
+            <input class=" senha form-control" type="password" name="confsenha" placeholder="Confirmar Senha">
+        </div>
+
+        <div class="btt">
+            <button id="btt" class="btn " type="submit">CADASTRAR</button>
+        </div>
+
+    </form>
+    <p>Já possui uma conta?<a href="{% url 'logar' %}">Clique Aqui</a></p>
+
+{% endblock %}
+

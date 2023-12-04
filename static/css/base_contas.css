@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex: 100%;
+}
+
+.img{
+    flex: 50%;
+    background-image: url(/static/img/barber3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario{
+    background-color: black;
+    flex: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+}
+
+.cadastro{
+    width:100%;
+    padding:20px;
+}
+
+.login{
+    width: 100%;
+    padding: 50px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto {
+    padding: 29px;
+}
+
+.email-usu, .tel-data, .senhas{
+    display: flex;
+    gap: 4px;
+}
+
+.usu-senha{
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario, .email, .telefone, .data, .senha{
+    width: 50%;
+}
+
+.form-control{
+    margin-bottom: 15px;
+}
+
+.btt{
+    display: flex;
+    justify-content: center;
+}
+
+#btt{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #900a0c; 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+}
+
+p{
+    color: white;
+}
+
+.error, .success{
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.error{
+    background-color: rgb(155, 37, 37);
+    color: white; 
+}
+.success{
+    background-color: rgb(20, 126, 29);
+    color: white; 
+}

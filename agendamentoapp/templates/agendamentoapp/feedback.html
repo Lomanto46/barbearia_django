@@ -1,0 +1,42 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/feedback.css' %}">
+
+<div class="review-container">
+
+    <center>
+        <div style="margin-bottom: 10px;">
+          <a href="{% url 'barbeiro' %}"><img src="/static/img/img-removebg-preview.png" width="200" alt=""></a>
+        </div>
+    </center>
+
+    {% include "agendamentoapp/messages.html" %}
+
+
+    <h2>Seu feedback é muito importante para a melhoria do processo de qualidade da nossa barbearia!</h2>
+    <a href="{% url 'enviarfeed' %}"><button style="font-weight: bold; width:256px;" class="btt">ADICIONAR FEEDBACK</button></a>
+    {% if not feedbs %}
+      <p style='color: white;'>Não há nenhum feedback nessa Barbearia... <a style="color: yellow;" href="{% url 'enviarfeed' %}">Por favor insira um feedback</a></p>
+    {% else %}
+        {% for f in feedbs %}
+        <div class="cards">
+            <div class="card">
+                <div class="card-top">
+                    <div class="name">
+                        <p>{{f.nome}}</p>
+                    </div>
+                    
+                </div>
+
+                <div class="card-action">
+                    <span>{{f.conteudo}}</span>
+                </div>
+
+                <div class="card-action">
+                    <span>{{f.data}}</span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}    
+    {% endif %}
+</div>

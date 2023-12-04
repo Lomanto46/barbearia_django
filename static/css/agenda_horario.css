@@ -1,0 +1,46 @@
+body{
+    padding: 20px;
+    background-image: linear-gradient(rgba(0.1, 0.1, 0.1, 0.9), rgba(0.1, 0.1, 0.1, 0.9)), url(/static/img/barbearia.jpg);
+    background-size: cover;
+}
+
+.btt-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btt_data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btt{
+    border-radius: 6px;
+
+}
+
+.warning{
+    background-color: rgb(226, 176, 13);
+    padding: 5px;
+    border-radius: 6px;
+
+}
+
+.success{
+    background-color: rgb(17, 34, 94);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.warning{
+    background-color: orange;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+

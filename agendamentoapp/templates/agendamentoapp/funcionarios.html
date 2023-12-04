@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/funcionario.css' %}">
+<div class="box">
+    <a style='margin-bottom:25px;' href="{% url 'principal' %}"><img src="/static/img/img-removebg-preview.png" width="200" alt=""></a>
+</div>
+
+<div class="card-container">
+    <span class="pro">Barbeiro(a)</span>
+    {% if barbeiro.imagem %}
+        <img class="round" width="300px" src="{{barbeiro.imagem.url}}" alt="Barbeiro" />
+    {% else %}
+        <img class="round" width="300px" src="{% static 'img/barber3.jpg' %}" alt="Barbeiro">
+    {% endif %}
+    <h3>{{barbeiro.nome_completo}}</h3>
+    <h6>{{barbeiro.data_nasc}}</h6>
+    <p>Olá<br/> me chamo {{barbeiro.nome_completo}}</p>
+    <p>Venha cortar comigo!<br/><a style="color: white;" href="{% url 'agendar' %}">Clique Aqui</a></p>
+</div>
+
+
+
+

@@ -1,0 +1,24 @@
+
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/feedback.css' %}">
+
+<div class="fb-form">
+    <h2 style='color: white;'>DEIXE O SEU FEEDBACK</h2>
+    <form method="post" action="{% url 'enviarfeed' %}" class='form-group' enctype="multipart/form-data"> {% csrf_token %}
+        <div class="cards">
+            <div class="card">
+                <div>
+                    <textarea id='fb-comment' name='feedback' placeholder='Deixe aqui o seu feedback!'></textarea>
+                </div>
+                <br>
+                <div>
+                    <input class="btt" type='submit'>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+

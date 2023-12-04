@@ -1,0 +1,23 @@
+{% extends "contasapp/base.html" %}
+{% load static %}
+
+{% block formulario %}
+
+    <form class="login" method="post">{% csrf_token %}
+        <div class="cabecalho">
+            <h2>Login</h2>
+        </div>
+        <hr style="color: white;">
+
+        <div class="usu-senha">
+            <form action="{% url 'logar' %}" method="post">{% csrf_token %}
+                <input class="usuario form-control" type="text" name="usuario" placeholder="Usuário de Acesso" required>
+                <input class=" senha form-control" type="password" name="senha" placeholder="Senha" required>
+                <button type="submit" id="btt" class="btn btn-danger" type="submit">LOGIN</button>
+            </form>
+        </div>
+    </form>
+    
+    <p>Ainda não possui uma conta?<a href="#">Clique Aqui</a></p>
+{% endblock %}
+

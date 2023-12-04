@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    flex: 100%;
+    background-image: linear-gradient(rgba(0.1, 0.1, 0.1, 0.9), rgba(0.1, 0.1, 0.1, 0.9)), url(/static/img/fundo.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt{
+    margin-left: 5%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+}
+
+.blocos{
+    height: 80vh;
+    display: flex;
+    gap: 20px;
+}
+
+.botoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.datas, .confirm{
+    color: white;
+    height: 400px;
+    border-radius: 15px;
+    border: 1px solid red;
+    box-shadow: 3px 3px 2px red;
+    flex: 33%;
+    padding: 15px;
+}
+
+.nome{
+    margin-bottom: 25px;
+}
+.barbeiros{
+    flex: 33%;
+    margin-left: 5%;
+}
+
+.horario{
+    padding: 10px;
+}
+
+h4{
+    color: #ffc107;
+    margin-bottom: 45px;
+}
+
+.confirm{
+    margin-right: 5%;
+}
+
+.btt{
+    background-color: transparent;
+    color: white;
+
+    border-radius: 8px;
+    padding: 2px;
+}

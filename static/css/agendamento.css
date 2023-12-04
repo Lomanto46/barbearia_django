@@ -1,0 +1,177 @@
+body{
+    background-color: rgb(17, 17, 17);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 90vh;
+    background-image: linear-gradient(rgba(0.1, 0.1, 0.1, 0.6), rgba(0.1, 0.1, 0.1, 0.6)), url(/static/img/fundo.jpg);
+    background-size: cover;
+    display: flex;
+    padding-top: 15px;
+    flex-direction: column;
+   
+}
+
+h2{
+    color: white;
+}
+.menu{
+    margin-left: 5%;
+    display: flex;
+    justify-content: end;
+}
+.menu nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 7px;
+    border: 1px solid #ffc107;
+    padding: 6px;
+    box-shadow: 2px 2px 1px #ffc107;
+    border-radius: 18px;
+}
+
+.menu nav a:hover{
+    background-color: #ffc107;
+    transition: 0.5s all linear;
+}
+.cabecalho{
+    margin-left: 5%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+#bemvindo{
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.msg{
+    color: white;
+}
+
+.p{
+    color: white;
+    margin-top: 15px;
+}
+
+.icones{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.secao1, .secao2, .secao3, .secao4{
+    padding: 10px;
+  
+}
+
+
+.assunto1, .assunto2, .assunto3{
+    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+.assunto1, .assunto2, .assunto3{
+    color: white;
+}
+
+.cards{
+    display: flex;
+    margin-top: 50px;
+    color: white;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 70px;
+}
+
+.card{
+    background-color: rgb(15, 15, 15);
+    border-bottom-right-radius: 25px;
+    box-shadow: 2px 2px 5px #ffc107;
+}
+
+.card h5{
+    margin-bottom: 20px;
+}
+
+.valor{
+    display: flex;
+    height: 25px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.agendar{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.texto{
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 5%;
+}
+
+.imgs{
+    flex: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.imgs img{
+    border-radius: 5px;
+}
+
+.secao3 h5{
+    color: white
+}
+
+.datas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.secao4{
+    display: flex;
+    justify-content: center;
+}
+
+.secao4 img{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.success{
+    background-color: rgb(17, 34, 94);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
